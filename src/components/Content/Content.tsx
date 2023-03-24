@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import Counter from "../Counter";
 import Customer from "../Customer";
 
 export default class Content extends Component {
@@ -24,6 +25,8 @@ export default class Content extends Component {
               salary: 25000.0,
             }}
           />
+
+          <Counter {...{ initialValue: 3 }} />
         </div>
       </>
     );
