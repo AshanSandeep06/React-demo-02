@@ -1,4 +1,9 @@
 import React, { Component, Fragment } from "react";
+import { Route, Routes } from "react-router-dom";
+import About from "../../pages/About";
+import Contact from "../../pages/Contact";
+import Home from "../../pages/Home";
+import Profile from "../../pages/Profile";
 import Counter from "../Counter";
 import Customer from "../Customer";
 
@@ -28,8 +33,15 @@ export default class Content extends Component {
 
           <Counter {...{ initialValue: 3 }} /> */}
 
-          <h1>Content</h1>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
 
+            <Route path="/About" element={<About />}></Route>
+
+            <Route path="/Contact" element={<Contact />}></Route>
+
+            <Route path="Profile" element={<Profile />}></Route>
+          </Routes>
         </div>
       </>
     );
