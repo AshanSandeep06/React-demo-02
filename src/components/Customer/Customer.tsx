@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
-type CustomerProps = {
-  id: string;
-  name: string;
-  address: string;
-  salary: number;
-};
+// type CustomerProps = {
+//   id: string;
+//   name: string;
+//   address: string;
+//   salary: number;
+// };
 
-// interface CustomerProperties{
-//     id: string,
-//     name: string,
-//     address: string,
-//     salary: number
-// }
+interface CustomerProps{
+    id: string,
+    name: string,
+    address: string,
+    salary: number
+}
 
 export default class Customer extends Component<CustomerProps> {
   render() {
