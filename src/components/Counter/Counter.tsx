@@ -34,6 +34,7 @@ export default class Counter extends Component<CounterProps, CounterState> {
           <button
             className="text-4xl border-2 w-12 h-12 rounded-lg"
             onClick={this.increaseCount}
+            disabled={this.state.count === 10}
           >
             +
           </button>
@@ -41,6 +42,7 @@ export default class Counter extends Component<CounterProps, CounterState> {
           <button
             className="text-4xl border-2 w-12 h-12 rounded-lg"
             onClick={this.decreaseCount}
+            disabled={this.state.count === 0}
           >
             -
           </button>
