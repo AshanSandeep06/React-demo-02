@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+
+const activeLink = "border-b-2";
+const normalLink = "";
 
 export default class Header extends Component {
   render(): React.ReactNode {
@@ -10,10 +14,30 @@ export default class Header extends Component {
           </section>
 
           <section className="w-1/2 flex items-center justify-around text-lg">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
-            <a href="#">My Profile</a>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to={"/About"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              About
+            </NavLink>
+            <NavLink
+              to={"/Contact"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              Contact
+            </NavLink>
+            <NavLink
+              to={"/Profile"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              My Profile
+            </NavLink>
           </section>
         </div>
       </section>
