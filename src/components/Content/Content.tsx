@@ -8,7 +8,26 @@ export default class Content extends Component {
       // <Fragment></Fragment> ---> <> </>
       <>
         <div className="flex justify-center items-center h-screen">
-          <Customer />
+          <Customer
+            {...
+              {
+              id: "C001",
+              name: "Bimal",
+              address: "Galle",
+              salary: 25000.0,
+            }
+          }
+          />
+          <Customer
+            {...
+              {
+              id: "C001",
+              name: "Ruwan",
+              address: "Jaffna",
+              salary: 25000.0,
+            }
+          }
+          />
         </div>
       </>
     );
