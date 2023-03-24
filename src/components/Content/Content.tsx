@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import Customer from "../Customer";
 
 export default class Content extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class Content extends Component {
       // <Fragment></Fragment> ---> <> </>
       <>
         <div className="flex justify-center items-center h-screen">
-          <h1>Content</h1>
+          <Customer />
         </div>
       </>
     );
