@@ -8,7 +8,7 @@ export default class Content extends Component {
       // <Fragment></Fragment> ---> <> </>
       <>
         <div className="flex justify-center items-center h-screen">
-          <Customer />
+          <Customer/>
         </div>
       </>
     );
