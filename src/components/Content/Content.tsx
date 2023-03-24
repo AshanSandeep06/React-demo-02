@@ -9,7 +9,7 @@ export default class Content extends Component {
       // <Fragment></Fragment> ---> <> </>
       <>
         <div className="flex justify-center items-center h-screen">
-          <Customer
+          {/* <Customer
             {...{
               id: "C001",
               name: "Bimal",
@@ -26,7 +26,10 @@ export default class Content extends Component {
             }}
           />
 
-          <Counter {...{ initialValue: 3 }} />
+          <Counter {...{ initialValue: 3 }} /> */}
+
+          <h1>Content</h1>
+
         </div>
       </>
     );
