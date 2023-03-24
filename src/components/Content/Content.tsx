@@ -6,11 +6,7 @@ export default class Content extends Component {
       // Fragement wenuwata
       // <Fragment></Fragment> ---> <> </>
       <>
-        <div className="flex justify-center items-center">
-          <h1>Content</h1>
-        </div>
-
-        <div>
+        <div className="flex justify-center items-center h-screen">
           <h1>Content</h1>
         </div>
       </>
